@@ -1,0 +1,10 @@
+<ul>
+  @for (todo of todos; track todo; let i = $index) {
+    <app-todo-item
+      [name]="todo.name"
+      [completed]="todo.completed"
+      (toggle)="toggle.emit(i)"
+      (remove)="remove.emit(i)"
+    />
+  }
+</ul>

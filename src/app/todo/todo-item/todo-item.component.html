@@ -1,0 +1,14 @@
+<li>
+  <mat-checkbox
+    [checked]="completed"
+    (change)="toggle.emit()"
+    [disableRipple]="true"
+    color="primary"
+  ></mat-checkbox>
+
+  <span [class.completed]="completed">{{ name }}</span>
+
+  <button mat-icon-button color="warn" (click)="remove.emit()">
+    <mat-icon>delete</mat-icon>
+  </button>
+</li>

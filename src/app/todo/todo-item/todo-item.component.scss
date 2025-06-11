@@ -1,0 +1,35 @@
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  justify-self: end;
+}
+

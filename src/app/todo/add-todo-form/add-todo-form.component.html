@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSave()" class="form">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Aufgabe</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Farbe</mat-label>
+    <input matInput type="color" formControlName="color" />
+  </mat-form-field>
+
+  <div class="actions">
+    <button mat-flat-button color="primary" type="submit">Speichern</button>
+  </div>
+</form>

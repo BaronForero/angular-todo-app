@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input type="text" formControlName="task" placeholder="Neues Todo" />
+  <button type="submit">Submit</button>
+
+  @if (form.get('task')?.invalid && form.get('task')?.touched) {
+    <small style="color: red;">Bitte gib eine Aufgabe ein</small>
+  }
+</form>

@@ -1,0 +1,11 @@
+.todo-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.todo-left{
+  margin-left: 6rem;
+}
+
