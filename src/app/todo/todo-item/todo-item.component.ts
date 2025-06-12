@@ -16,6 +16,7 @@ export class TodoItemComponent {
 
   @Input() name: string = '';
   @Input() completed: boolean = false;
+  @Input() color: string = '#000000';
 
   @Output() toggle = new EventEmitter<void>();
   @Output() remove = new EventEmitter<void>();

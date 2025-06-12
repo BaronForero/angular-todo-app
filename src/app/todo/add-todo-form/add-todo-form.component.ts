@@ -30,18 +30,9 @@ export class AddTodoFormComponent {
 
   public onSave(){
     if (this.form.valid) {
+      console.log('Form Value:', this.form.value);
       this.save.emit(this.form.value);
       this.form.reset({ color: '#000000' });
     }
   }
-
-  public onCancel() {
-    this.cancel.emit();
-    this.form.reset({ color: '#000000' });
-  }
-
-  public resetForm() {
-    this.form.reset({color: '#000000'});
-  }
-
 }

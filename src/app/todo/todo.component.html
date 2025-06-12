@@ -8,7 +8,7 @@
 
   <div class="todo-right">
     @if (!formOpen) {
-      <button (click)="formOpen = true">Neues Todo</button>
+      <button mat-stroked-button (click)="formOpen = true">Neues Todo</button>
     } @else {
       <app-add-todo-form (save)="addTodo($event)" />
     }

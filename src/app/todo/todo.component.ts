@@ -45,7 +45,7 @@ export class TodoComponent {
     }
   }
 
-  public addTodo(todo: { name: string; color: string }) {
+  public addTodo(todo: { name: string; color: string, }) {
     this.todos.push({
       name: todo.name,
       completed: false,
